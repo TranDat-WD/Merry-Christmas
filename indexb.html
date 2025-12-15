@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quà cho Mỹ Tiên</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      touch-action: manipulation;
+    }
+    canvas { display: block; }
+
+    #overlay {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle, #050505, #000);
+      color: rgba(255,255,255,0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      z-index: 10;
+      user-select: none;
+      text-align: center;
+    }
+
+    #overlay span {
+      font-size: 14px;
+      margin-top: 12px;
+      letter-spacing: 0.25em;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    Tap to open 🎁
+    <span>— a small surprise —</span>
+  </div>
+
+  <canvas id="c"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
